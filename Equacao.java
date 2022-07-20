@@ -4,7 +4,6 @@ public class Equacao {
     private double b;
     private double c;
 
-    
     public double getA() {
         return a;
     }
