@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class principal{
     public static void main(String[] args) {
-        Equacao eq = new Equacao();
         EquacaoX eqx = new EquacaoX();
         Delta d = new Delta();
         Scanner e = new Scanner(System.in);
