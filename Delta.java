@@ -2,6 +2,7 @@ import java.lang.Math;
 
 public class Delta extends Equacao {
     
+
     double delta;
 
     public double getDelta() {
@@ -12,8 +13,8 @@ public class Delta extends Equacao {
         this.delta = delta;
     }
 
-    public double calculaDelta(){
-        delta = Math.pow(getB(), 2) - 4 * (getA() * getC());
+    public double calculaDelta(double a, double b, double c){
+        delta = Math.pow(b, 2) - 4 * (a * c);
         return delta;
     }
 }
