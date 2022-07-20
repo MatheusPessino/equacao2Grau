@@ -33,8 +33,12 @@ public class EquacaoX extends Equacao {
     public String exibeRaiz(double delta) {
         String resolucao;
         System.out.println("-----------------------------------------------" + System.lineSeparator());
-        if (delta < 0 || this.calculaXn(delta) == this.calculaXp(delta)) {
-            resolucao = ("Digite os numeros novamente seu delta foi negativo ou suas raizes iguais!");
+        if (delta < 0 ) {
+            resolucao = ("Digite os termos novamente seu delta foi negativo!");
+        }else if(super.getA() == 0){
+            resolucao =("Digite um a diferente de zero senão não é uma equacao do 2 grau");
+        }else if(this.calculaXn(delta) == this.calculaXp(delta)){
+            resolucao = ("Suas raizes são iguais");
         } else {
             resolucao = ("Resultados:" + System.lineSeparator());
             resolucao += ("Valor do delta = " + delta + System.lineSeparator());
